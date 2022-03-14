@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto&display=swap');
+:root {
+  --d1: clamp(4rem, 8vw + 1rem, 8rem); 
+  --h1: clamp(2.8125rem, 4vw + 1rem, 4.209rem); //Min:45px - Max:67.34px
+  --h2: clamp(2.0625rem, 3vw + 1rem , 3.1575rem); //Min: 33px - Max: 50.52px
+  --h3: clamp(1.875rem, 2.7vw + 1rem, 2.369rem); //Min: 30px - Max: 37.90px
+  --h4: 1.777rem; //28.43px
+  --h5: 1.333rem; //21.33px
+  --h6: 1rem;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $beta;
+  font-family: $body-font;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba($white, .8);
+}
+
+// Typography
+p {
+  margin-bottom: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.5rem 0 1rem;
+  font-family: $heading-font;
+  font-weight: 700;
+  line-height: 1.15;
+  color: $white;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3); 
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+
+small,
+.sm-text {
+  font-size: 14px;
+}
+.lg-text {
+  font-size: 18px;
+}
+.xl-text {
+  font-size: 20px;
+}
+.xxl-text {
+  font-size: 24px;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.fw-md {
+  font-weight: 500;
+}
+.lh-1 {
+  line-height: 1;
+}
+
+// Button Default
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+.btn:focus,
+.btn.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// Form Control Default
+input:focus {
+  outline: none;
+}
+.form-control {
+  border-color: rgba($black, 0.1);
+}
+
+textarea {
+  resize: none;
+}
+
+// Grid 
+.custom--container {
+  @include xliv-screen {
+    max-width: 1560px;
+  }
+}
+
+

@@ -1,0 +1,38 @@
+.badge {
+    border-radius: 2px;
+    &--primary {
+        background: rgba($primary, .15);
+        border: 1px solid $primary;
+        color: $primary;
+    }
+    &--secondary {
+        background: rgba($secondary, .15);
+        border: 1px solid $secondary;
+        color: $secondary;
+    }
+    &--danger {
+        background: rgba($danger, .15);
+        border: 1px solid $danger;
+        color: $danger;
+    }
+    &--success {
+        background: rgba($success, .15);
+        border: 1px solid $success;
+        color: $success;
+    }
+    &--warning {
+        background: rgba($warning, .15);
+        border: 1px solid $warning;
+        color: $warning;
+    }
+    &--info {
+        background: rgba($info, .15);
+        border: 1px solid $info;
+        color: $info;
+    }
+    &--dark {
+        background: rgba(lighten($beta, 25%), .15);
+        border: 1px solid lighten($beta, 25%);
+        color: lighten($beta, 25%);
+    }
+}

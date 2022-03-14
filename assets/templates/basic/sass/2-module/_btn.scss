@@ -1,0 +1,142 @@
+.btn {
+  font-family: $heading-font;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: 0 8px 15px rgba($dark, 0.4);
+  }
+  // Color Option
+  &--primary {
+    background: $primary;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($primary, 3%);
+    }
+  }
+  &--secondary {
+    background: $secondary;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($secondary, 3%);
+    }
+  }
+  &--success {
+    background: $success;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($success, 3%);
+    }
+  }
+  &--danger {
+    background: $danger;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($danger, 3%);
+    }
+  }
+  &--warning {
+    background: $warning;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($warning, 3%);
+    }
+  }
+  &--info {
+    background: $info;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($info, 3%);
+    }
+  }
+  &--dark {
+    background: $dark;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: darken($dark, 3%);
+    }
+  }
+  &--light {
+    background: $white;
+    color: $primary;
+    &:hover {
+      color: $white;
+      background: $dark;
+    }
+  }
+  &--gamma {
+    font-weight: 500;
+    background-size: 200% auto;
+    background-image: linear-gradient(
+      to right,
+      $gamma 0%,
+      darken($gamma, 20%) 51%,
+      $gamma 100%
+    );
+    color: $white;
+    &:hover {
+      font-weight: 500;
+      color: $white;
+      background-position: right center;
+    }
+  }
+  // Button  Shape
+  &--sqr {
+    line-height: 1;
+    padding: 0.75rem;
+    font-size: 20px;
+  }
+  // Button Size
+  &--md {
+    padding: 0.5rem 1rem; //8px X 16px
+  }
+  &--lg {
+    padding: 0.625rem 1.25rem; //10px X 20px
+  }
+  &--xl {
+    padding: 0.75rem 1.5rem; //12px X 24px
+  }
+  &--xxl {
+    padding: 1rem 2rem; //16px X 24px
+  }
+  // Button Outline
+  &--outline {
+    border: 1px solid $border;
+    background: transparent;
+    &:hover {
+      color: $white;
+      background: $primary;
+      border-color: $primary;
+    }
+    &.active {
+      color: $white;
+      background: $primary;
+      border-color: $primary;
+    }
+  }
+  // Custom Button
+  &--transaction {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: transparent;
+    border: 2px solid $gamma;
+    color: $gamma;
+    &:hover {
+      color: $gamma;
+      background: $white;
+      border-color: $white;
+    }
+    &.active {
+      background: $gamma;
+      color: $white;
+    }
+  }
+}

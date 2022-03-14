@@ -1,0 +1,18 @@
+.faq-section {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/faq-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($alpha, .7);
+        z-index: -1;
+      }
+}

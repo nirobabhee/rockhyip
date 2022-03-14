@@ -1,0 +1,61 @@
+.team-member {
+  position: relative;
+  z-index: 2;
+  &__img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    &:hover {
+      .team-member__share {
+        top: 0;
+        z-index: 1;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &-is {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  &__share {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba($alpha, 0.7);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  &__body {
+    background: $gamma;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 30px 15px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -60px;
+    z-index: 5;
+  }
+  &__name {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  &__amount {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.section {
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+  &--sm {
+    padding-top: clamp(30px, 4vw, 60px);
+    padding-bottom: clamp(30px, 4vw, 60px);
+  }
+  &--top {
+    padding-top: clamp(60px, 8vw, 120px);
+  }
+  &--bottom {
+    padding-bottom: clamp(60px, 8vw, 120px);
+  }
+  &__head {
+    padding-bottom: clamp(30px, 4vw, 60px);
+  }
+}

@@ -1,0 +1,22 @@
+.widget {
+    padding: 30px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba($black, .2);
+    @include xlii-screen {
+        padding: 40px 30px;
+    }
+    &__title {
+        margin-top: 0;
+    }
+    &-alt {
+        &__head {
+            padding: 15px 30px;
+            border-radius: 5px 5px 0 0;
+            background: $primary;
+        }
+        &__body  {
+            background: $light;
+            padding: 15px 30px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.t-heading-font {
+  font-family: $heading-font;
+}
+.t-body-font {
+  font-family: $body-font;
+}
+
+.t-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+  }
+  &--primary {
+    &:hover {
+      color: $primary;
+    }
+  }
+  &--danger {
+    &:hover {
+      color: $danger;
+    }
+  }
+  &--info {
+    &:hover {
+      color: $info;
+    }
+  }
+  &--light {
+    &:hover {
+      color: $white;
+      box-shadow: 0 5px 10px rgba($dark, 0.3);
+    }
+  }
+}
+.t-short-para {
+  max-width: 48ch;
+}
+

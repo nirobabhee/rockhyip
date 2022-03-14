@@ -1,0 +1,87 @@
+.form--control {
+  height: 50px;
+  line-height: 48px;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 1px solid lighten($beta, 15%);
+  background-color: lighten($beta, 5%);
+  color: $white;
+  &::placeholder {
+    text-transform: capitalize;
+  }
+  &:focus {
+    color: $white;
+    outline: none;
+    border-color: $gamma;
+    box-shadow: 0 5px 10px rgba($gamma, 0.3);
+    background-color: lighten($beta, 3%);
+  }
+  &-outline {
+    background: transparent;
+    &:focus {
+      background: transparent;
+      outline: none;
+      box-shadow: none;
+    }
+    &-light {
+      border-color: $white;
+      color: $white;
+      &::placeholder {
+        color: rgba($white, 0.7);
+      }
+      &:focus {
+        border-color: $white;
+        color: $white;
+      }
+    }
+    &-dark {
+      border-color: $border;
+      color: $text-clr;
+      &::placeholder {
+        color: rgba($text-clr, 0.7);
+      }
+      &:focus {
+        border-color: $border;
+        color: $text-clr;
+      }
+    }
+    &-thin {
+      border-color: rgba($white, 0.2);
+      color: $white;
+      &::placeholder {
+        color: rgba($white, 0.7);
+      }
+      &:focus {
+        border-color: rgba($white, 0.3);
+        color: $white;
+      }
+    }
+  }
+  &-textarea {
+    border-radius: 3px;
+    font-size: 16px;
+    border: 1px solid lighten($beta, 15%);
+    background-color: lighten($beta, 5%);
+    color: $white;
+    &::placeholder {
+      text-transform: capitalize;
+    }
+    &:focus {
+      color: $white;
+      outline: none;
+      border-color: $gamma;
+      box-shadow: 0 5px 10px rgba($gamma, 0.3);
+      background-color: lighten($beta, 3%);
+    }
+  }
+  &[readonly] {
+    background: lighten($beta, 15%);
+    border: 1px solid lighten($beta, 15%);
+    color: darken($white, 40%);
+  }
+}
+.input-group-text {
+  border: 1px solid $border;
+  border-right: none;
+  background: $light;
+}

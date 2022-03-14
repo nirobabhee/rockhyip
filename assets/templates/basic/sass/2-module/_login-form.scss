@@ -1,0 +1,10 @@
+.login-form {
+    padding: 30px 15px;
+    box-shadow: 0 20px 30px rgba($black, .5);
+    border: 1px solid lighten($beta, 15%);
+    border-radius: 10px;
+    background: $alpha;
+    @include lg-screen {
+        padding: 60px 40px;
+    }
+}

@@ -1,0 +1,15 @@
+.profit-calculator {
+  box-shadow: 0 20px 40px rgba($black, .8);
+  @include md-screen {
+    background: $alpha;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border: 1px solid rgba($gamma, .3);
+    border-radius: 15px;
+  }
+  @include xl-screen {
+      padding: 40px 60px 50px;
+  }
+}

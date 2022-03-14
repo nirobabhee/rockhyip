@@ -1,0 +1,15 @@
+.testimonial-slider {
+    &__item {
+        padding-left: 15px;
+        padding-right: 15px;
+        @include iphn-plus {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @include md-screen {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+       
+    }
+}

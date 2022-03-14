@@ -1,0 +1,356 @@
+{
+    "banner": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Banner",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "button_name": "text",
+            "url": "text",
+            "images": {
+                "image": {
+                    "size": "1435x995"
+                }
+            }
+        }
+    },
+    "feature": {
+        "builder": true,
+        "name": "Feature",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "images": {
+                "image": {
+                    "size": "800x1300"
+                }
+            }
+        },
+        "element": {
+            "icon": "icon",
+            "title": "text",
+            "description": "textarea",
+            "modal": true
+        }
+    },
+    "about": {
+        "builder": true,
+        "name": "About Us",
+        "content": {
+            "images": {
+                "background_image": {
+                    "size": "500x500",
+                    "thumb": "100x100"
+                },
+                "image": {
+                    "size": "500x500",
+                    "thumb": "100x100"
+                }
+            },
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea",
+            "icon": "icon"
+        }
+    },
+    "about_dark": {
+        "builder": false,
+        "name": "About Us Dark",
+        "content": {}
+    },
+    "service": {
+        "builder": true,
+        "name": "Service Section",
+        "content": {
+            "select": {
+                "name": "trx_type",
+                "options": {
+                    "deposit": "Deposit",
+                    "withdraw": "Withdraw"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element": {
+            "select": {
+                "name": "trx_type",
+                "options": {
+                    "deposit": "Deposit",
+                    "withdraw": "Withdraw"
+                }
+            },
+            "service_icon": "icon",
+            "title": "text",
+            "description": "textarea",
+            "modal": false
+        }
+    },
+    "counter": {
+        "builder": true,
+        "name": "Counter",
+        "element": {
+            "icon": "icon",
+            "title": "text",
+            "counter_digit": "text",
+            "modal": true
+        }
+    },
+    "profit": {
+        "builder": true,
+        "name": "How we profit",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "title": "text",
+            "description": "textarea",
+            "icon": "icon",
+            "modal": true
+        }
+    },
+    "plan": {
+        "builder": true,
+        "name": "Plan",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "support_duration": "text"
+        }
+    },
+    "calculator": {
+        "builder": true,
+        "name": "Calculator",
+        "content": {
+            "heading": "text",
+            "description": "textarea"
+        }
+    },
+    "choose_reason": {
+        "builder": true,
+        "name": "Choose Reason",
+        "content": {
+            "heading": "text",
+            "description": "textarea",
+            "images": {
+                "background_image": {
+                    "size": "1920x1080"
+                }
+            }
+        },
+        "element": {
+            "title": "text",
+            "description": "textarea",
+            "icon": "icon",
+            "modal": true
+        }
+    },
+    "transaction": {
+        "builder": true,
+        "name": "Transactions",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        }
+    },
+    "cta": {
+        "builder": true,
+        "name": "Join With Us",
+        "content": {
+            "title": "text",
+            "subtitle": "text",
+            "url": "text",
+            "button_name": "text",
+            "images": {
+                "image": {
+                    "size": "1000x550"
+                },
+                "background_image": {
+                    "size": "1920x550"
+                }
+            }
+        }
+    },
+    "expert_team": {
+        "builder": true,
+        "name": "Expert Team Member",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "name": "text",
+            "designation": "text",
+            "images": {
+                "image": {
+                    "size": "1000X650",
+                    "thumb": "100x100"
+                }
+            },
+            "modal": false
+        }
+    },
+    "faq": {
+        "builder": true,
+        "name": "FAQ's",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text",
+            "images": {
+                "background_image": {
+                    "size": "2000x1350"
+                }
+            }
+        },
+        "element": {
+            "question": "text",
+            "answer": "textarea",
+            "modal": false
+        }
+    },
+    "testimonial": {
+        "builder": true,
+        "name": "Testimonials",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "name": "text",
+            "images": {
+                "image": {
+                    "size": "1000x950",
+                    "thumb": "100x100"
+                }
+            },
+            "organization": "text",
+            "quote": "textarea",
+            "rating": "text",
+            "modal": false
+        }
+    },
+    "payment": {
+        "builder": true,
+        "name": "Gateways",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "images": {
+                "image": {
+                    "size": "400x400",
+                    "thumb": "100x100"
+                }
+            },
+            "modal": true
+        }
+    },
+    "blog": {
+        "builder": true,
+        "name": "Blogs",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "images": {
+                "image_1": {
+                    "size": "728x465",
+                    "thumb": "120x80"
+                },
+                "image_2": {
+                    "size": "728x465",
+                    "thumb": "120x80"
+                }
+            },
+            "title": "text",
+            "description": "textarea",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+    "contact_us": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "title": "text",
+            "email": "text",
+            "phone": "text"
+        },
+        "element": {
+            "title": "text",
+            "icon": "text",
+            "content": "text",
+            "modal": true
+        },
+        "modal": false
+    },
+    "policy_pages": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Policy Pages",
+        "element": {
+            "title": "text",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "title": "text",
+            "social_icon": "icon",
+            "url": "text",
+            "modal": true
+        }
+    },
+    "footer": {
+        "builder": true,
+        "name": "Footer",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "1920x1080"
+                }
+            }
+        }
+    },
+    "sign_up": {
+        "builder": true,
+        "name": "Sign Up",
+        "content": {
+            "heading": "text",
+            "images": {
+                "image": {
+                    "size": "1920x1080"
+                }
+            }
+        }
+    },
+    "sign_in": {
+        "builder": true,
+        "name": "Sign In",
+        "content": {
+            "heading": "text",
+            "images": {
+                "image": {
+                    "size": "1920x1080"
+                }
+            }
+        }
+    },
+    "subscribe": {
+        "builder": true,
+        "name": "Subscribe",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        }
+    }
+}

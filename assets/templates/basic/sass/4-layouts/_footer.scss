@@ -1,0 +1,29 @@
+.footer {
+    background: $alpha;
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($alpha, .8);
+        z-index: -1;
+      }
+    &-top {
+      padding-top: clamp(60px, 8vw, 120px);
+      padding-bottom: clamp(60px, 8vw, 120px);
+    }
+    &-copyright {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-top: 1px solid rgba($white, .2);
+    }
+  }
+  

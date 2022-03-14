@@ -1,0 +1,30 @@
+.header {
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+    @include lg-screen {
+        padding: 0;
+    }
+    &__top {
+        padding: 13px 45px;
+        position: relative;
+        background: $light;
+            @include lg-screen {
+                padding: 12px  25px;
+            }
+            @include xl-screen {
+                padding: 12px  45px;
+            }
+    }
+    &--primary {
+        position: absolute;
+        width: 100%;
+    }
+    &--dashboard {
+        position: absolute;
+        width: 100%;
+        @include lg-screen {
+            position: relative;
+        }
+    }
+}

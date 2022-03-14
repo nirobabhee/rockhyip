@@ -1,0 +1,25 @@
+.custom--card {
+    border-radius: 3px;
+    background: lighten($beta, 10%);
+    border: 1px solid lighten($beta, 15%);
+    .card-header {
+        padding: 1rem 1.5rem;
+        background: rgba($beta, .5);
+        border-bottom: 1px solid lighten($beta, 15%);
+    }
+    .card-title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .card-text {
+        margin-top: 1rem;
+    }
+    .card-body {
+        padding: 2rem 1.5rem;
+    }
+    .card-footer {
+        padding: 1rem 1.5rem;
+        background: rgba($beta, .5);
+        border-top: 1px solid lighten($beta, 15%);
+    }
+}

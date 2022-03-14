@@ -1,0 +1,50 @@
+.icon {
+    position: relative;
+    display: inline-block;
+    // Shape 
+    &--circle {
+        border-radius: 50%;
+        text-align: center;
+    }
+    &--sqr {
+        border-radius: 5px;
+        text-align: center;
+    }
+    // Size 
+    &--xs {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    &--sm {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 27px;
+    }
+    &--md {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 32px;
+    }
+    &--lg {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 35px;
+    }
+    &--xl {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 42px;
+    }
+    &--xxl {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 45px;
+    }
+}

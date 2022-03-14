@@ -1,0 +1,15 @@
+.nav-toggler {
+    .navs {
+        visibility: visible;
+        opacity: 1;
+        z-index: 9997;
+        top: calc(100% + 10px);
+        @include lg-screen {
+            top: auto;
+        }
+        &--toggle {
+            background: $white;
+            color: $text-clr;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  padding: 30px 15px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid lighten($beta, 10%);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 1;
+  background-color: $beta;
+  &:hover {
+    box-shadow: 0 0 30px $black;
+    transform: scale(1.02);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $gamma;
+    clip-path: polygon(
+      29% 49%,
+      44% 54%,
+      56% 46%,
+      72% 48%,
+      86% 43%,
+      100% 35%,
+      100% 100%,
+      0 100%,
+      0 55%,
+      15% 53%
+    );
+    z-index: -1;
+  }
+  &__badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 15px;
+    &--primary {
+      background: $primary;
+    }
+    &--success {
+      background: $success;
+    }
+    &--warning {
+      background: $warning;
+    }
+    &--danger {
+      background: $danger;
+    }
+  }
+  &__body {
+    min-height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__footer {
+    margin-top: auto;
+  }
+}

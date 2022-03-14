@@ -1,0 +1,17 @@
+.fixed-header {
+    .header-top {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: $alpha;
+        box-shadow: 0 15px 30px rgba($black, .5);
+        border-bottom: 1px solid rgba($gamma, .5);
+    }
+}

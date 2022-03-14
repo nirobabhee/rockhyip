@@ -1,0 +1,56 @@
+.custom--nice-select {
+  .nice-select {
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 16px;
+    &::after {
+      height: 8px;
+      width: 8px;
+      margin-top: -6px;
+      border-bottom: 2px solid $primary;
+      border-right: 2px solid $primary;
+    }
+    .list {
+      flex-direction: column;
+      background: $primary;
+      right: 0;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 10px 15px rgba($dark, 0.2);
+      .option {
+        color: $white;
+        &:hover {
+          color: $white;
+          background: darken($primary, 5%);
+        }
+      }
+      .selected {
+        background: darken($primary, 7%);
+      }
+    }
+    .current {
+      color: rgba($text-clr, 0.7);
+    }
+  }
+  .nice-select:active,
+  .nice-select.open,
+  .nice-select:focus {
+    border-color: $border;
+  }
+  &--outline {
+    .nice-select {
+      border: 1px solid $white;
+    }
+  }
+  &--light {
+    .nice-select::after {
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
+    }
+    .current {
+      color: rgba($white, 0.7);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.recent-activity {
+  display: flex;
+  align-items: center;
+  min-width: 285px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include lg-screen {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__sub-title {
+    font-size: 12px;
+    display: block;
+  }
+  &__title {
+    font-family: $heading-font;
+    line-height: 1.2;
+    max-width: 15ch;
+    display: block;
+    word-wrap: break-word;
+    color: $white;
+    &:hover {
+      color: $gamma;
+    }
+  }
+}

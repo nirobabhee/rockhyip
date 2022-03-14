@@ -1,0 +1,26 @@
+.newsletter {
+    border: 2px solid $gamma;
+    padding: 5px;
+    max-width: 550px;
+    &__container {
+        display: flex;
+        padding: 5px;
+        background: $white;
+    }
+    
+    &__input {
+        background: transparent;
+        border: none;
+        color: $heading-clr;
+        &:focus {
+            color: $heading-clr;
+            outline: none;
+            box-shadow: none;
+            border-color: transparent;
+            background-color: transparent;
+          }
+          &::placeholder {
+              color: $text-clr;
+          }
+    }
+}

@@ -1,0 +1,33 @@
+.primary-submenu-toggler {
+  position: relative;
+  .primary-menu__list {
+    &.has-sub {
+      &.active {
+        padding-bottom: 15px;
+        background: rgba($gamma, 0.2);
+        @include lg-screen {
+            padding-bottom: 0;
+            background: transparent;
+        }
+        .primary-menu__link {
+          color: $gamma;
+          @include lg-screen {
+            padding-bottom: 0;
+            background: transparent;
+        }
+        }
+        .primary-menu__sub { 
+          visibility: visible;
+          opacity: 1;
+          height: auto;
+          z-index: 9999;
+          @include lg-screen {
+            z-index: -9999;
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

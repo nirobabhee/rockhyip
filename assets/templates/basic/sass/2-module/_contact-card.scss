@@ -1,0 +1,10 @@
+.contact-card {
+    padding: 30px;
+    border: 1px solid $gamma;
+    border-radius: 5px;
+    background: rgba($gamma, .25);
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

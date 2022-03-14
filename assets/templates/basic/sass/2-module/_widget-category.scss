@@ -1,0 +1,20 @@
+.widget-category {
+    &__item {
+        border-bottom: 1px solid rgba($gamma, .3);
+        &:last-child {
+            border-bottom: none;
+            .vh-widget-category__link {
+                padding-bottom: 0;
+            }
+        }
+    }
+    &__link {
+        display: inline-block;
+        padding-bottom: 1rem;
+        color: $text-clr;
+        transition: all .3s ease;
+        &:hover {
+            color: $gamma;
+        }
+    }
+}

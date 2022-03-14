@@ -1,0 +1,25 @@
+.form--select {
+  height: 50px;
+  border-radius: 3px;
+  border-radius: 2px;
+  border: 1px solid lighten($beta, 15%);
+  background-color: lighten($beta, 5%);
+  color: $white;
+  &:focus {
+    border-color: $gamma;
+    box-shadow: 0 5px 10px rgba($gamma, .3);
+    background-color: lighten($beta, 3%);
+  }
+  &-sm {
+    border-radius: 3px;
+    border-radius: 2px;
+    border: 1px solid lighten($beta, 15%);
+    background-color: lighten($beta, 5%);
+    color: $white;
+    font-size: 0.875rem;
+    &:focus {
+      box-shadow: none;
+      border-color: lighten($beta, 15%);
+    }
+  }
+}

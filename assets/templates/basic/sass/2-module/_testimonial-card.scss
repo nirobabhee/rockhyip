@@ -1,0 +1,48 @@
+.testimonial-card {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding: 75px 15px 30px;
+  position: relative;
+  border-radius: 15px;
+  background: lighten($beta, 2%);
+  box-shadow: 0 15px 30px rgba($black, 0.5);
+  z-index: 1;
+  @include xl-screen {
+    padding: 75px 20px 30px;
+  }
+  &::after {
+    content: "\f10d";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 100px;
+    line-height: 1;
+    z-index: -2;
+    opacity: .05;
+  }
+  &__img {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px $beta, 0 15px 40px rgba($black, 0.8);
+    &-is {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    color: lighten($beta, 80%);
+  }
+  &__sub-title {
+    font-size: 14px;
+    color: lighten($beta, 60%);
+  }
+}

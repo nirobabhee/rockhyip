@@ -1,0 +1,31 @@
+.feature-card {
+  width: 100%;
+  height: 100%;
+  padding: 30px 15px;
+  position: relative;
+  border: 1px solid rgba($gamma, .5);
+  border-radius: 20px;
+  background-color: $beta;
+  transition: all 0.3s ease;
+  z-index: 1;
+  @include xl-screen {
+    padding: 30px;
+  }
+  &:hover {
+    box-shadow: 0 3px 10px rgba($gamma, .5);
+    transform: translateY(-5px);
+  }
+  &__icon {
+    background: $gamma;
+    color: $white;
+    &-float {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: var(--d1);
+      line-height: 1;
+      opacity: 0.05;
+      z-index: -1;
+    }
+  }
+}

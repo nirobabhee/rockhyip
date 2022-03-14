@@ -1,0 +1,62 @@
+.quickview-card {
+  width: max-content;
+  overflow: hidden;
+  padding: 20px 15px;
+  box-shadow: 0 7px 20px rgba($black, 0.5);
+  border-radius: 15px;
+  background: lighten($beta, 8%);
+  position: relative;
+  z-index: 1;
+  @include lg-screen {
+    width: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $gamma;
+    clip-path: polygon(
+      29% 53%,
+      45% 56%,
+      53% 46%,
+      68% 49%,
+      74% 40%,
+      100% 27%,
+      100% 100%,
+      0 100%,
+      0 60%,
+      12% 62%
+    );
+    z-index: -1;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    &-icon {
+      font-size: 40px;
+      line-height: 1;
+      color: $gamma;
+    }
+  }
+  &__menu {
+    padding: 0;
+    font-size: 30px;
+    line-height: 1;
+    color: $white;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $gamma;
+      box-shadow: none;
+    }
+  }
+  &__body {
+    min-width: 170px;
+    &-text {
+      max-width: 14ch;
+      color: $white;
+    }
+  }
+}
